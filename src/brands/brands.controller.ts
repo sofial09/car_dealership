@@ -8,7 +8,7 @@ export class BrandsController {
   constructor(private readonly brandsService: BrandsService) {}
 
   @Post()
-  create(@Body() createBrandDto: CreateBrandDto) {
+  create(@Body() createBrandDto: CreateBrandDto) { 
     return this.brandsService.create(createBrandDto);
   }
 
